@@ -5,7 +5,7 @@
 window.SILANGKA_CONFIG = {
   // Tempel URL Aplikasi Web Apps Script (berakhiran /exec) di antara tanda kutip.
   // Biarkan kosong ('') untuk menjalankan MODE DEMO (data contoh, tersimpan di HP saja).
-  API_URL: '',
+  API_URL: 'https://script.google.com/macros/s/AKfycbzsPgJdIOKQgh_FRD6UBXvvh7BNCj39zjL8OyBs9MlyzJVG8aFyOvwZd66CytiquSBRtw/exec',
 
   // Nama yang tampil di aplikasi
   NAMA_APP: 'SILANGKA',
