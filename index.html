@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>SILANGKA — Sistem Informasi Laporan Satwa Langka</title>
+  <meta name="description" content="Laporkan perjumpaan, satwa terluka, dan perburuan satwa dilindungi. Kerja sama PT Arutmin Indonesia Tambang Senakin dan BKSDA Kalimantan Selatan.">
+  <meta name="theme-color" content="#0F2E2C">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="banner-demo" class="banner-demo" hidden>MODE DEMO — data contoh, hanya tersimpan di perangkat ini</div>
+  <main id="app" tabindex="-1"></main>
+
+  <nav id="nav" class="nav" aria-label="Menu utama" hidden>
+    <a href="#/beranda" data-tab="beranda"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Beranda</span></a>
+    <a href="#/kamus" data-tab="kamus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg><span>Kamus</span></a>
+    <a href="#/lapor" data-tab="lapor" class="nav-fab" aria-label="Lapor"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+    <a href="#/peta" data-tab="peta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span>Peta</span></a>
+    <a href="#/laporan" data-tab="laporan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg><span>Laporan</span></a>
+  </nav>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+  <div id="modal" class="modal" hidden><div class="modal-card" role="dialog" aria-modal="true"></div></div>
+
+  <script src="config.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
