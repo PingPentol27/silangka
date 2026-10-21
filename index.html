@@ -16,15 +16,17 @@
   <link rel="stylesheet" href="app.css">
 </head>
 <body>
-  <div id="banner-demo" class="banner-demo" hidden>MODE DEMO — data contoh, hanya tersimpan di perangkat ini</div>
+  <div id="banner-demo" class="banner-demo" hidden>MODE DEMO — data contoh di perangkat ini · masuk: admin@demo.id / demo1234 · <button type="button" id="demo-reset">reset data demo</button></div>
   <main id="app" tabindex="-1"></main>
 
   <nav id="nav" class="nav" aria-label="Menu utama" hidden>
-    <a href="#/beranda" data-tab="beranda"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Beranda</span></a>
-    <a href="#/kamus" data-tab="kamus"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg><span>Kamus</span></a>
-    <a href="#/lapor" data-tab="lapor" class="nav-fab" aria-label="Lapor"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
-    <a href="#/peta" data-tab="peta"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span>Peta</span></a>
-    <a href="#/laporan" data-tab="laporan"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg><span>Laporan</span></a>
+    <img class="nav-logo" src="logo.png" alt="SILANGKA">
+    <a href="#/beranda" data-tab="beranda"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg><span>Beranda</span></a>
+    <a href="#/kamus" data-tab="kamus"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 19V5"/></svg><span>Kamus</span></a>
+    <a href="#/lapor" data-tab="lapor" class="nav-fab" aria-label="Lapor"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+    <a href="#/peta" data-tab="peta"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/></svg><span>Peta</span></a>
+    <a href="#/laporan" data-tab="laporan"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5h11M9 12h11M9 19h11M4 5h.01M4 12h.01M4 19h.01"/></svg><span>Laporan</span></a>
+    <a href="#/akun" data-tab="akun"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg><span>Akun</span></a>
   </nav>
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>

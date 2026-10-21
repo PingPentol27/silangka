@@ -1,9 +1,10 @@
 /* SILANGKA — Service Worker: membuat aplikasi tetap terbuka tanpa sinyal.
  * Naikkan angka VERSI setiap kali Anda mengubah file aplikasi agar HP pengguna memuat versi baru. */
-var VERSI = 'silangka-v2.0.0';
+var VERSI = 'silangka-v2.1.0';
 var INTI = [
   './', 'index.html', 'app.css', 'app.js', 'config.js', 'manifest.webmanifest',
   'logo.png', 'arutmin.png', 'favicon.png', 'icon-192.png', 'icon-512.png', 'apple-touch-icon.png',
+  'login-1.jpg', 'login-2.jpg', 'login-3.jpg', 'demo/gas-shim.js', 'demo/Code.js',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css',
   'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js',
   'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
